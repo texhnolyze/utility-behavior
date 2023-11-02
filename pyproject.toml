@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "utility-behavior"
+version = "0.1.0"
+description = ""
+authors = ["texhnolyze <joegriepen@gmail.com>"]
+readme = "README.md"
+packages = [{include = "utility_behavior"}]
+
+[tool.poetry.scripts]
+ub = "utility_behavior.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.10.1"
+ruff = "^0.1.3"
+pytest = "^7.4.3"
+syrupy = "^4.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
